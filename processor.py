@@ -1,4 +1,5 @@
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 import json
 import os
 from scraper import scrape_all
@@ -9,8 +10,8 @@ def process_pipeline():
         print("Error: GEMINI_API_KEY environment variable not set.")
         return
 
-    genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-1.5-flash-latest')
+    # Initialize the modern GenAI Client
+    client = genai.Client(api_key=api_key)
     
     raw_articles = scrape_all()
     processed_articles = []
@@ -33,9 +34,13 @@ def process_pipeline():
         }}
         """
         try:
-            response = model.generate_content(
-                prompt,
-                generation_config={"response_mime_type": "application/json"}
+            # Using the new 2.5-flash model and modern JSON config syntax
+            response = client.models.generate_content(
+                model='gemini-2.5-flash',
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    response_mime_type="application/json"
+                )
             )
             ai_data = json.loads(response.text)
             
