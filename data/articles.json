@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "id": 0,
+    "title_zh": "物理学院杨志成课题组揭示量子纠缠为量子“魔法”开辟高效通道",
+    "title_en": "Yang Zhicheng Research Group at the School of Physics Reveals Quantum Entanglement Paves an Efficient Pathway for Quantum 'Magic'",
+    "source": "Peking_Uni",
+    "url": "https://news.pku.edu.cn/kytk/jxky/e5a21fed57184a28ad12821eeea0b9f7.htm",
+    "summary": "This research significantly advances frontier quantum technologies by uncovering how quantum entanglement creates efficient pathways for harnessing quantum phenomena. Such breakthroughs are critical for accelerating the development of next-generation quantum computing, ultra-secure communication, and highly precise sensing, offering substantial military and intelligence advantages. Mastery of these efficient entanglement mechanisms will likely shape future geopolitical power dynamics and national security postures."
+  },
+  {
+    "id": 1,
+    "title_zh": "长期以来，科研人员虽知晓这两种量子资源的重要性，却一直未能清晰揭示二者间的内在关联。近日，北京大学物理学院杨志成课题组的研究带来了突破性发现：量子纠缠能够为量子魔“法”的注入打开一条高效通道，让我们从量子门中提取“魔法”资源变得更加高效。",
+    "title_en": "Peking University Breakthrough Reveals Quantum Entanglement as Efficient Channel for 'Magic' Injection, Enhancing Quantum Resource Extraction from Gates",
+    "source": "Peking_Uni",
+    "url": "https://news.pku.edu.cn/kytk/jxky/e5a21fed57184a28ad12821eeea0b9f7.htm",
+    "summary": "This Peking University breakthrough significantly enhances the efficiency of 'magic' state injection and resource extraction, a fundamental challenge in achieving fault-tolerant quantum computation. Such advancements are crucial for developing practical quantum computers capable of breaking current cryptographic standards, enabling ultra-secure communications, and simulating complex systems relevant to advanced materials and defense. This research underscores China's growing leadership in quantum information science, intensifying the global strategic competition for quantum supremacy and its profound military and technological implications."
+  },
+  {
+    "id": 2,
+    "title_zh": "习近平总书记在加强基础研究座谈会上的重要讲话激励教育工作者砥砺...",
+    "title_en": "General Secretary Xi Jinping's Important Speech at the Symposium on Strengthening Basic Research Inspires Educators to Forge Ahead...",
+    "source": "Peking_Uni",
+    "url": "https://news.pku.edu.cn/kytk/mtbdnew/329841c008db42e29545a1c8a2ee0793.htm",
+    "summary": "This strategic intelligence brief underscores China's national imperative, articulated by General Secretary Xi Jinping, to significantly bolster foundational research within cutting-edge critical technology fields. This initiative signals a concerted effort to cultivate indigenous innovation and talent, reducing reliance on foreign technology and accelerating China's trajectory toward self-sufficiency and global leadership in key scientific and technological domains. Such a sustained push will directly enhance China's dual-use capabilities, impacting global military technological parity and intensifying strategic competition."
+  }
+]
