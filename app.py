@@ -6,7 +6,7 @@ from google import genai
 st.set_page_config(page_title="DeepLeak: OSINT Intelligence Portal", page_icon="⚡", layout="wide")
 
 st.title("⚡ DeepLeak: Strategic Intelligence for AI Arms Race")
-st.caption("Tracking Eastern Deep Tech Breakthroughs Missed by Western Mainstream Media")
+st.caption("Tracking Chinese Deep Tech Breakthroughs Missed by Western Mainstream Media")
 
 # Load database
 @st.cache_data(ttl=3600)
@@ -43,7 +43,7 @@ else:
 st.markdown("---")
 
 # Conversational Interface
-st.header("💬 Strategic Intelligence Interrogation System")
+st.header("💬 Strategic Intelligence Question Answering System")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
