@@ -1,4 +1,4 @@
-# DeepLeak: Cnversational Strategic Intelligence for AI Race
+# DeepLeak: Conversational Strategic Intelligence for AI Race
 
 An automated Open-Source Intelligence (OSINT) data pipeline designed to scrape, translate, summarize, and evaluate deep tech breakthroughs from elite Chinese defense institutions, university research labs, and state publications that are frequently omitted by international mainstream media.
 
