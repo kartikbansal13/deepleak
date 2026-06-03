@@ -1,0 +1,83 @@
+import streamlit as st
+import json
+import os
+import google.generativeai as genai
+
+st.set_page_config(page_title="DeepLeak: OSINT Intelligence Portal", page_icon="⚡", layout="wide")
+
+st.title("⚡ DeepLeak: Strategic Intelligence for AI Arms Race")
+st.caption("Tracking Eastern Deep Tech Breakthroughs Missed by Western Mainstream Media")
+
+# Load database
+@st.cache_data(ttl=3600)
+def load_intel():
+    if os.path.exists('data/articles.json'):
+        with open('data/articles.json', 'r', encoding='utf-8') as f:
+            return json.load(f)
+    return []
+
+intel_data = load_intel()
+
+# Sidebar Setup
+st.sidebar.header("🔑 Control Panel")
+api_key_input = st.sidebar.text_input("Enter Gemini API Key", type="password", value=os.getenv("GEMINI_API_KEY", ""))
+
+if not api_key_input:
+    st.warning("Please provide a Gemini API Key in the sidebar to activate the Intel Chatbot interface.")
+else:
+    genai.configure(api_key=api_key_input)
+
+# Display News Feed
+st.header("🎯 Live Intelligence Stream")
+if not intel_data:
+    st.info("No scraped data found. Run the extraction engine pipeline.")
+else:
+    for item in intel_data:
+        with st.expander(f"📌 [{item['source']}] {item['title_en']}"):
+            st.markdown(f"**Original Title:** {item['title_zh']}")
+            st.markdown(f"**Strategic Summary:** {item['summary']}")
+            st.markdown(f"[Source Publication Link]({item['url']})")
+
+st.markdown("---")
+
+# Conversational Interface
+st.header("💬 Strategic Intelligence Interrogation System")
+
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+
+for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
+        st.markdown(message["content"])
+
+if prompt := st.chat_input("Ask about cross-strait AI development, quantum supremacy, or specific source findings..."):
+    if not api_key_input:
+        st.error("Operation Denied: Missing valid API configuration.")
+    else:
+        st.session_state.messages.append({"role": "user", "content": prompt})
+        with st.chat_message("user"):
+            st.markdown(prompt)
+
+        # Inject flat-file DB into context window for instant context retrieval
+        context_corpus = json.dumps(intel_data, ensure_ascii=False)
+        system_instructions = f"""
+        You are 'DeepLeak AI', an elite defense analyst. Use this scraped intel corpus to answer user inquiries. 
+        If the data doesn't explicitly contain the answer, use your pre-trained knowledge base to draw strategic connections, 
+        but clarify what is source-verified vs. extrapolated context.
+        
+        Intel Corpus:
+        {context_corpus}
+        """
+
+        with st.chat_message("assistant"):
+            try:
+                model = genai.GenerativeModel('gemini-1.5-flash')
+                chat = model.start_chat(history=[])
+                
+                full_prompt = f"{system_instructions}\n\nUser Question: {prompt}"
+                response = model.generate_content(full_prompt)
+                
+                st.markdown(response.text)
+                st.session_state.messages.append({"role": "assistant", "content": response.text})
+            except Exception as e:
+                st.error(f"Inference error: {e}")

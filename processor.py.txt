@@ -1,0 +1,60 @@
+import google.generativeai as genai
+import json
+import os
+from scraper import scrape_all
+
+def process_pipeline():
+    api_key = os.getenv("GEMINI_API_KEY")
+    if not api_key:
+        print("Error: GEMINI_API_KEY environment variable not set.")
+        return
+
+    genai.configure(api_key=api_key)
+    model = genai.GenerativeModel('gemini-1.5-flash')
+    
+    raw_articles = scrape_all()
+    processed_articles = []
+    
+    print(f"Processing {len(raw_articles)} scraped records...")
+    
+    for idx, art in enumerate(raw_articles):
+        prompt = f"""
+        You are an elite open-source defense intelligence analyst tracking state-sponsored deep tech.
+        Translate this Chinese academic news headline and text snippet into highly professional English.
+        Then provide a concise, structured 2-3 sentence strategic summary analyzing the global military/technological implications.
+
+        Original Title: {art['title']}
+        Original Context: {art['raw_text']}
+
+        Output format strict JSON:
+        {{
+          "title_en": "Translated English Title Here",
+          "summary_en": "Strategic Analysis Summary Here"
+        }}
+        """
+        try:
+            response = model.generate_content(
+                prompt,
+                generation_config={"response_mime_type": "application/json"}
+            )
+            ai_data = json.loads(response.text)
+            
+            processed_articles.append({
+                "id": idx,
+                "title_zh": art['title'],
+                "title_en": ai_data['title_en'],
+                "source": art['source'],
+                "url": art['url'],
+                "summary": ai_data['summary_en']
+            })
+        except Exception as e:
+            print(f"Failed pipeline index {idx}: {e}")
+            
+    # Save results to flat-file database
+    os.makedirs('data', exist_ok=True)
+    with open('data/articles.json', 'w', encoding='utf-8') as f:
+        json.dump(processed_articles, f, ensure_ascii=False, indent=2)
+    print("Database updated successfully.")
+
+if __name__ == "__main__":
+    process_pipeline()
