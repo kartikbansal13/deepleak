@@ -1,8 +1,8 @@
 import streamlit as st
 import json
 import os
-import google.generativeai as genai
- 
+from google import genai
+
 st.set_page_config(page_title="DeepLeak: OSINT Intelligence Portal", page_icon="⚡", layout="wide")
 
 st.title("⚡ DeepLeak: Strategic Intelligence for AI Arms Race")
@@ -22,10 +22,12 @@ intel_data = load_intel()
 st.sidebar.header("🔑 Control Panel")
 api_key_input = st.sidebar.text_input("Enter Gemini API Key", type="password", value=os.getenv("GEMINI_API_KEY", ""))
 
+client = None
 if not api_key_input:
     st.warning("Please provide a Gemini API Key in the sidebar to activate the Intel Chatbot interface.")
 else:
-    genai.configure(api_key=api_key_input)
+    # Initialize the modern GenAI Client
+    client = genai.Client(api_key=api_key_input)
 
 # Display News Feed
 st.header("🎯 Live Intelligence Stream")
@@ -51,7 +53,7 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
 
 if prompt := st.chat_input("Ask about cross-strait AI development, quantum supremacy, or specific source findings..."):
-    if not api_key_input:
+    if not client:
         st.error("Operation Denied: Missing valid API configuration.")
     else:
         st.session_state.messages.append({"role": "user", "content": prompt})
@@ -71,11 +73,13 @@ if prompt := st.chat_input("Ask about cross-strait AI development, quantum supre
 
         with st.chat_message("assistant"):
             try:
-                model = genai.GenerativeModel('gemini-1.5-flash-latest')
-                chat = model.start_chat(history=[])
-                
                 full_prompt = f"{system_instructions}\n\nUser Question: {prompt}"
-                response = model.generate_content(full_prompt)
+                
+                # Using the modern 2.5-flash model
+                response = client.models.generate_content(
+                    model='gemini-2.5-flash',
+                    contents=full_prompt
+                )
                 
                 st.markdown(response.text)
                 st.session_state.messages.append({"role": "assistant", "content": response.text})
