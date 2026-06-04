@@ -16,7 +16,7 @@ As a Conversational OSINT Platform, Deepleak integrates Web Scraping, Machine Tr
 ## Technical Highlights & Engineering Decisions
 
 *   **Automated Serverless Pipeline:** Uses **GitHub Actions** to run the scraper on a daily schedule. This separates the data collection from the web hosting, meaning the app stays live 24/7 without needing a background server.
-*   *   **Fault-Tolerant Scraping:** Built with defensive error-handling. If the targeted university websites block the scraper with a firewall, the pipeline catches the error gracefully and automatically loads built-in backup data.
+*   **Fault-Tolerant Scraping:** Built with defensive error-handling. If the targeted university websites block the scraper with a firewall, the pipeline catches the error gracefully and automatically loads built-in backup data.
 *   **Git-Backed Data Storage:** The system saves all translated intelligence into a simple **JSON data store** directly in the GitHub repository. The automated bot commits the updates daily, eliminating database maintenance entirely. The **Streamlit** frontend tracks this versioned data file, caching operational database reads for maximum speed.
 *   **In-Context RAG (Retrieval-Augmented Generation):** Rather than setting up an external Vector Database, the system leverages the massive 1-million token context window of Gemini 2.5 Flash. The entire JSON database is injected directly into the prompt, allowing the chatbot to answer user questions instantly .
 
