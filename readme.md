@@ -6,15 +6,14 @@ The global race for artificial intelligence and deep tech supremacy is no longer
 The true starting point for next-generation breakthroughs lies within elite Chinese institutions, state laboratories, and university research hubs. Because these institutions publish their updates almost exclusively in Chinese on localized portals, their progress frequently goes completely unreported by international mainstream media.
 For foreign policy experts, defense strategists, and technology analysts, relying solely on mainstream news creates a dangerous blind spot. Academic and institutional research is a leading indicator; what a university lab tests today is what will be deployed in the field three to five years from now. Staying on top of these developments in real time is critical to understanding the future balance of technological power. This automated pipeline bridges that gap by continuously monitoring, translating, and analyzing these hidden channels before they reach the mainstream.
 
+As a Conversational OSINT Platform, Deepleak integrates Web Scraping, Machine Translation, Text Summarization, and Question Answering. 
+
 ## Architecture 
 - **Frontend & Analytics Engine**: Streamlit Framework
 - **Automated Compute Infrastructure**: GitHub Actions (Cron Scheduler)
 - **LLM Orchestration**: Google Gemini Pro LLM Engine
 - **Storage Strategy**: Git-backed Flat-File Versioned Vector Alternative (JSON)
 
-## Implementation Details
-
-The project's automated data pipeline bypasses the need for traditional, expensive cloud infrastructure (like dedicated servers or cloud databases) by creatively using modern developer tools and an optimized AI context window.
 
 ## Technical Highlights & Engineering Decisions
 
