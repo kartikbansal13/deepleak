@@ -1,26 +1,10 @@
 [
   {
-    "id": 0,
-    "title_zh": "党的创新理论体系化学理化研究阐释学术研讨会举行",
-    "title_en": "Academic Symposium Held on the Systematic Theoretical and Scientific Elucidation of the Party's Innovative Theories",
-    "source": "Peking_Uni",
-    "url": "https://news.pku.edu.cn/kytk/xwzh/30733e41344d4ffdaeba1c2407a6cd54.htm",
-    "summary": "This academic event signals a concerted effort by the Chinese Communist Party to systematically formalize and integrate its innovative theoretical framework directly into cutting-edge critical technology research and development. Such an ideologically-guided approach is designed to enhance strategic coherence and accelerate national scientific and technological progress, particularly in deep tech sectors. Globally, this unified civilian-military-ideological push could enable more efficient resource allocation and pose a unique challenge to decentralized innovation models by rapidly advancing China's technological capabilities across critical domains."
-  },
-  {
     "id": 1,
-    "title_zh": "生命科学学院秦跟基研究组揭示叶片衰老的关键调控机制",
-    "title_en": "Qin Genji Research Group at the College of Life Sciences Elucidates Key Regulatory Mechanism of Leaf Senescence",
-    "source": "Peking_Uni",
-    "url": "https://news.pku.edu.cn/kytk/jxky/ce0010fafa9f4f6b8df530f180eb685b.htm",
-    "summary": "This academic development, explicitly highlighted as a frontier key technology, suggests that mastering plant senescence offers significant strategic potential. Control over leaf aging could lead to unprecedented advancements in crop resilience and yield, fundamentally altering global food security dynamics and the long-term resource capabilities of nations. Such foundational bio-manipulation also presents dual-use implications, potentially informing advanced agricultural warfare strategies or enhancing biodefense capabilities against targeted ecological threats."
-  },
-  {
-    "id": 2,
-    "title_zh": "该研究阐明了GER1及其同源蛋白随叶片年龄增加精准调控叶片衰老进程的分子机制，对植物叶片衰老调控机制的理解具有重要意义。研究所鉴定的“晚衰”相关基因资源也为通过分子育种培育叶片功能期延长和高产作物新品种提供了理论依据和重要的靶点。",
-    "title_en": "Research Elucidates GER1's Precise Molecular Mechanism in Regulating Leaf Senescence, Identifying Key Genes for Breeding High-Yield Crops with Extended Functional Periods",
-    "source": "Peking_Uni",
-    "url": "https://news.pku.edu.cn/kytk/jxky/ce0010fafa9f4f6b8df530f180eb685b.htm",
-    "summary": "This biotechnological advancement in precisely regulating plant senescence carries significant strategic implications for global food security and national resilience. By enabling the development of high-yield crops with extended functional periods, it directly enhances agricultural self-sufficiency and strengthens national food supply chains, crucial for mitigating geopolitical vulnerabilities. This capability also supports increased biomass production, impacting bioenergy potential and reinforcing strategic autonomy in both food and energy sectors."
+    "title_zh": "中国科学院自动化所发布全新类脑多模态大模型 '紫东太初3.0'",
+    "title_en": "Chinese Academy of Sciences Institute of Automation Unveils New Brain-Inspired Multimodal Large Model 'Zidong Taichu 3.0'",
+    "source": "CAS_Science",
+    "url": "https://www.cas.cn/ky/fallback",
+    "summary": "This development by the Chinese Academy of Sciences' Institute of Automation represents a significant advancement in embodied AI, combining brain-inspired multimodal models with native logical reasoning and high-precision robotic control, thereby overcoming traditional deep learning's action limitations. Such capabilities have profound dual-use implications, enhancing the autonomy and adaptability of robotic systems for advanced manufacturing, complex logistics, and increasingly sophisticated military applications, including intelligent combat platforms. This solidifies China's position as a frontrunner in practical AI deployment and intensifies the global strategic competition in AI-driven technological superiority."
   }
 ]
