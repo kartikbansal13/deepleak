@@ -1,10 +1,26 @@
 [
   {
+    "id": 0,
+    "title_zh": "党的创新理论体系化学理化研究阐释学术研讨会举行",
+    "title_en": "Academic Symposium Held on the Systemic and Scientific-Theoretical Elucidation of the Party's Innovative Theories",
+    "source": "Peking_Uni",
+    "url": "https://news.pku.edu.cn/kytk/xwzh/30733e41344d4ffdaeba1c2407a6cd54.htm",
+    "summary": "This symposium signals China's strategic intent to systematically apply its guiding Party theories to foster innovation in cutting-edge technological domains. It underscores a state-directed approach to accelerate self-reliance and leadership in deep tech, potentially with significant dual-use military applications. This top-down integration of ideology and scientific pursuit aims to optimize national resources for strategic breakthroughs, posing a unique challenge to global technological competition and security landscapes."
+  },
+  {
     "id": 1,
-    "title_zh": "中国科学院自动化所发布全新类脑多模态大模型 '紫东太初3.0'",
-    "title_en": "Chinese Academy of Sciences Institute of Automation Unveils New Brain-Inspired Multimodal Large Model 'Zidong Taichu 3.0'",
-    "source": "CAS_Science",
-    "url": "https://www.cas.cn/ky/fallback",
-    "summary": "This development by the Chinese Academy of Sciences' Institute of Automation represents a significant advancement in embodied AI, combining brain-inspired multimodal models with native logical reasoning and high-precision robotic control, thereby overcoming traditional deep learning's action limitations. Such capabilities have profound dual-use implications, enhancing the autonomy and adaptability of robotic systems for advanced manufacturing, complex logistics, and increasingly sophisticated military applications, including intelligent combat platforms. This solidifies China's position as a frontrunner in practical AI deployment and intensifies the global strategic competition in AI-driven technological superiority."
+    "title_zh": "近日，北京大学心理与认知科学学院毕彦超教授与魏坤琳教授团队合作，在《细胞·报告》（Cell Reports）在线发表题为“Virtual flying experience changes neural responses to seeing wings”的研究论文。该研究结合VR技术与功能磁共振成像（fMRI），...",
+    "title_en": "Recently, teams led by Professor Bi Yanchao and Professor Wei Kunlin from Peking University's School of Psychological and Cognitive Sciences collaboratively published a research paper titled 'Virtual flying experience changes neural responses to seeing wings' online in Cell Reports. This research combines VR technology with functional magnetic resonance imaging (fMRI)...",
+    "source": "Peking_Uni",
+    "url": "https://news.pku.edu.cn/kytk/jxky/00411502f1464adba77ac1597a94f308.htm",
+    "summary": "This research, demonstrating neural adaptation to virtual flight experiences via VR and fMRI, has significant implications for military training and human-machine interface development. The ability to rapidly induce brain plasticity through simulated environments could drastically accelerate skill acquisition for pilots and drone operators, enhancing performance with complex or novel defense systems. This could provide a strategic advantage in developing next-generation human-integrated weaponry and command-and-control systems."
+  },
+  {
+    "id": 2,
+    "title_zh": "专访北大光华院长田轩：AI时代，如何避免人才沦为技术的附庸",
+    "title_en": "Exclusive Interview with Tian Xuan, Dean of PKU Guanghua School of Management: Preventing Human Talent from Becoming a Subservient Appendage to Technology in the AI Era",
+    "source": "Peking_Uni",
+    "url": "https://news.pku.edu.cn/kytk/mtbdnew/d7b6942cc1fa4595ab0a8b18fc9d56e5.htm",
+    "summary": "This strategic intelligence brief highlights China's focus on maintaining human agency and expertise within the rapidly advancing AI era, rather than allowing talent to become subservient to technology. This reflects a critical national strategy to cultivate human leadership in AI development and application, crucial for achieving decisive advantages in dual-use technologies and military-civil fusion initiatives. Such an approach suggests an understanding that human ingenuity, not just technological prowess, remains paramount for global leadership in advanced AI systems."
   }
 ]
