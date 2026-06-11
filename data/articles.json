@@ -1,26 +1,26 @@
 [
   {
     "id": 0,
-    "title_zh": "本研究不仅揭示了铁纳米颗粒在成熟撞击玻璃内远超月壤均值的高度富集特征，同时确认了铁纳米颗粒形成自Fe2+歧化反应、硫化物分解反应与太阳风离子注入后期改造共同影响的复杂过程，为理解复杂太空风化过程提供了信息参考。",
-    "title_en": "This study not only reveals the highly enriched characteristics of iron nanoparticles within mature impact glasses, significantly exceeding average lunar regolith values, but also confirms that iron nanoparticle formation is a complex process resulting from the combined influence of Fe2+ disproportionation, sulfide decomposition, and late-stage modification by solar wind ion implantation, thereby providing critical insights for understanding intricate space weathering processes.",
+    "title_zh": "土耳其中东技术大学校长一行访问北京大学",
+    "title_en": "Delegation Led by President of Turkey's Middle East Technical University Visits Peking University",
     "source": "Peking_Uni",
-    "url": "https://news.pku.edu.cn/kytk/jxky/8eaeb6f62608468eae4c1c503eeac408.htm",
-    "summary": "This research on lunar iron nanoparticle formation and enrichment provides crucial insights into space weathering and the distribution of valuable resources on the Moon. Such detailed understanding is fundamental for developing robust in-situ resource utilization (ISRU) capabilities, which are essential for sustainable lunar base construction and long-duration deep-space missions. Consequently, this scientific progress directly underpins national efforts in lunar exploration and resource exploitation, serving as a critical enabler in the intensifying global strategic competition for dominance in cislunar space."
+    "url": "https://news.pku.edu.cn/kytk/xwzh/fde722cee4a547188211ea4a484fe063.htm",
+    "summary": "This high-level academic visit between Turkey's Middle East Technical University and China's Peking University, explicitly targeting \"frontier critical technology domains,\" signifies Turkey's strategic pursuit of advanced technological cooperation. Such engagement could facilitate critical knowledge transfer and joint development in dual-use technologies, potentially bolstering Turkey's defense industrial base and diversifying its technological partnerships beyond traditional Western allies. This scientific diplomacy carries significant geopolitical implications for NATO's technological coherence and the global balance of power."
   },
   {
     "id": 1,
+    "title_zh": "本研究不仅揭示了铁纳米颗粒在成熟撞击玻璃内远超月壤均值的高度富集特征，同时确认了铁纳米颗粒形成自Fe2+歧化反应、硫化物分解反应与太阳风离子注入后期改造共同影响的复杂过程，为理解复杂太空风化过程提供了信息参考。",
+    "title_en": "This Research Unveils Extreme Enrichment of Iron Nanoparticles in Mature Impact Glass, Far Exceeding Lunar Regolith Averages, and Confirms Their Complex Formation via Fe2+ Disproportionation, Sulfide Decomposition, and Post-Solar Wind Ion Implantation Modification, Advancing Understanding of Space Weathering",
+    "source": "Peking_Uni",
+    "url": "https://news.pku.edu.cn/kytk/jxky/8eaeb6f62608468eae4c1c503eeac408.htm",
+    "summary": "This study, identified as a frontier critical technology, significantly advances understanding of lunar surface chemistry and space weathering by detailing the complex formation and extreme enrichment of iron nanoparticles (FeNPs) in impact glass. Such insights are paramount for developing future in-situ resource utilization (ISRU) capabilities on the Moon, potentially enabling the extraction of metallic resources or advanced material manufacturing crucial for sustainable lunar bases and deep-space missions. This expertise offers a strategic advantage in space resource exploitation and long-duration extraterrestrial operations, bolstering national capabilities in a key domain of future space power."
+  },
+  {
+    "id": 2,
     "title_zh": "专访北大光华院长田轩：AI时代，如何避免人才沦为技术的附庸",
     "title_en": "Exclusive Interview with Tian Xuan, Dean of Peking University's Guanghua School of Management: In the AI Era, How to Prevent Human Talent from Becoming Subservient to Technology",
     "source": "Peking_Uni",
     "url": "https://news.pku.edu.cn/kytk/mtbdnew/d7b6942cc1fa4595ab0a8b18fc9d56e5.htm",
-    "summary": "This strategic intelligence brief from a leading Chinese academic institution underscores a critical national focus on human capital within advanced AI development. It highlights China's strategic imperative to maintain human agency and innovative leadership, preventing talent from becoming subservient to AI as a key to retaining decisive advantage in military and deep tech applications. This approach signals a deliberate effort to ensure human intellect guides AI evolution, rather than being overshadowed by it."
-  },
-  {
-    "id": 2,
-    "title_zh": "党的创新理论体系化学理化研究阐释学术研讨会举行",
-    "title_en": "Academic Symposium on the Systematization and Theoretical Elucidation of the Party's Theories of Innovation Convenes",
-    "source": "Peking_Uni",
-    "url": "https://news.pku.edu.cn/kytk/xwzh/30733e41344d4ffdaeba1c2407a6cd54.htm",
-    "summary": "This academic event, ostensibly focused on the Party's innovative theories, is explicitly identified as pertaining to frontier critical technology fields. This strategic linkage suggests a coordinated, top-down effort to infuse ideological frameworks into scientific and technological development. Such integration signals a national push to accelerate deep tech advancements for strategic autonomy and global competitiveness."
+    "summary": "This discussion from a leading Chinese academic institution highlights a critical strategic challenge for nations developing advanced AI: ensuring human talent remains central to innovation and strategic decision-making, rather than being marginalized by technological advancements. For military and deep tech applications, this underscores the importance of robust human-machine teaming and ethical AI development to prevent skill atrophy or strategic vulnerabilities from over-reliance on autonomous systems. Ultimately, the effective integration of AI while simultaneously cultivating human expertise will be a key differentiator in future global military and technological competition."
   }
 ]
